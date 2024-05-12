@@ -32,9 +32,9 @@ function RoomComponent({room, updateRoom, removeRoom, totalRooms}) {
         <div className="room-row">
             <p className="traveler-text">Adults</p>
             <div className="buttons-container">
-                <div className="change-room-button" onClick={removeAdult}>–</div>
+                <div className="change-room-button" onClick={removeAdult} style={{backgroundColor: room.adults === 1 ? 'grey' : 'transparent'}}>–</div>
                 <div className="room-amount">{room.adults}</div>
-                <div className="change-room-button" onClick={addAdult}>+</div>
+                <div className="change-room-button" onClick={addAdult} style={{backgroundColor: room.adults === 14 ? 'grey' : 'transparent'}}>+</div>
             </div>
         </div>
         <div className="room-row">
@@ -43,9 +43,9 @@ function RoomComponent({room, updateRoom, removeRoom, totalRooms}) {
                 <p className="age-text">Ages 0 to 17</p>
             </div>
             <div className="buttons-container">
-                <div className="change-room-button" onClick={removeChildren}>–</div>
+                <div className="change-room-button" onClick={removeChildren} style={{backgroundColor: room.children === 0 ? 'grey' : 'transparent'}}>–</div>
                 <div className="room-amount">{room.children}</div>
-                <div className="change-room-button" onClick={addChildren}>+</div>
+                <div className="change-room-button" onClick={addChildren} style={{backgroundColor: room.children === 6 ? 'grey' : 'transparent'}}>+</div>
             </div>
         </div>
         {totalRooms !== 1 &&  

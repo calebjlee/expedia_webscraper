@@ -39,7 +39,11 @@ def scrape_expedia(link='https://www.expedia.com/Hotel-Search?destination=los%20
                         break
                 else:
                     image_src = image_locator.first.get_attribute('src')
-            location = content.locator('div.uitk-text.uitk-text-spacing-half.truncate-lines-2.uitk-type-300.uitk-text-default-theme').text_content()
+            location_locator = content.locator('div.uitk-text.uitk-text-spacing-half.truncate-lines-2.uitk-type-300.uitk-text-default-theme')
+            if location_locator.count() > 1:
+                location = location_locator.nth(1).text_content()
+            else:
+                location = location_locator.text_content()
             rating = float(content.locator('span.uitk-badge-base-text').text_content()) if content.locator('span.uitk-badge-base-text').is_visible() else "N/A"
             verbal_rating = content.locator('span.uitk-text.uitk-type-300.uitk-type-medium.uitk-text-emphasis-theme').text_content() if content.locator('span.uitk-text.uitk-type-300.uitk-type-medium.uitk-text-emphasis-theme').is_visible() else "N/A"
             num_reviews = content.locator('span.uitk-text.uitk-type-200.uitk-type-regular.uitk-text-default-theme').text_content() if content.locator('span.uitk-text.uitk-type-200.uitk-type-regular.uitk-text-default-theme').is_visible() else "N/A"
