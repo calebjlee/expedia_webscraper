@@ -1,0 +1,117 @@
+.hotel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+}
+
+.hotel-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60vw;
+    height: 15vw;
+    margin: 1vw;
+    border: 0.01vw solid #ccc;
+    border-radius: 1vw;
+    color: white;
+    cursor: pointer;
+}
+
+.image-card {
+    display: flex;
+    flex: 1;
+    width: 25%;
+    height: 100%;
+    border-radius: 1vw 0 0 1vw;
+}
+
+.content {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    height: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.title {
+    display: flex;
+    flex: 1;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+.upper-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.lower-card {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 5vw;
+}
+
+.rating {
+    display: flex;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 3vw;
+    height: 2vw;
+    border-radius: 0.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.rating-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.num-reviews {
+    font-size: 1vw;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-size: 5vw;
+    color: white;
+}
+
+.price {
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-right: 1vw;
+}

@@ -1,0 +1,19 @@
+Dark Theme Color Palette:
+Background Color (Very Dark):
+Primary Background: #121212 (Rich Black)
+Secondary Background: #1E1E1E (Dark Charcoal)
+Text Colors:
+Primary Text: #E0E0E0 (Bright Gray)
+Secondary Text: #B3B3B3 (Grayish White)
+Disabled Text: #666666 (Darker Gray)
+Accent Colors (used sparingly to bring attention to buttons, icons, or active states):
+Blue Accent: #BB86FC (Light Purple)
+Teal Accent: #03DAC6 (Vibrant Cyan)
+Red Accent: #CF6679 (Soft Red)
+Borders and Dividers:
+Light Border: #333333 (Very Dark Gray)
+Dark Border: #282828 (Onyx)
+Interactive Elements (like links or clickable items):
+Hover: #333333 (Dark Gray)
+Active: #000000 (Black)
+Focus: #575757 (Medium Gray)

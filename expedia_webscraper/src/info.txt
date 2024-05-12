@@ -1,0 +1,9 @@
+https://www.expedia.com/Hotel-Search?
+destination=los%20angeles&
+flexibility=0_DAY&
+d1=2024-05-14&
+startDate=2024-05-14&
+d2=2024-05-18&
+endDate=2024-05-18&
+adults=1&
+rooms=1
