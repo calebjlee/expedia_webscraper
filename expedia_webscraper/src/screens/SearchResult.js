@@ -13,7 +13,7 @@ function SearchResult() {
 
     useEffect(() => {
         console.log('fetching');
-        fetch(`http://localhost:8000/getdata?location=${location}&d1=${date1}&d2=${date2}&adults=${adults}&rooms=${rooms}`).then(response => {
+        fetch(`http://localhost:5000/getdata?location=${location}&d1=${date1}&d2=${date2}&adults=${adults}&rooms=${rooms}`).then(response => {
             if (response.ok) {
                 return response.json();
             }

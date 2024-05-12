@@ -19,8 +19,8 @@ function SearchBar({datePopup, setDatePopup, travelersPopup, setTravelersPopup})
         month2: "May",
         year1: new Date().getFullYear(),
         year2: new Date().getFullYear(),
-        day1: 12,
-        day2: 14,
+        day1: 20,
+        day2: 24,
         isDay1: true,
     });
 
