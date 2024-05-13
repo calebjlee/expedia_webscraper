@@ -50,6 +50,7 @@ This project is a sample based on the Expedia website, focused on webscraping to
    pip install flask
    pip install flask-cors
    pip install playwright
+   playwright install
    ```
 
 6. Open a new terminal and run the Flask app
