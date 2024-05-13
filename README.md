@@ -21,6 +21,7 @@ This project is a sample based on the Expedia website, focused on webscraping to
 
 - NodeJS <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" width="20" height="20"> - You can download it [here](https://nodejs.org/)
 - IDE - Recommended: VS Code <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" width="20" height="20"> - You can download it [here](https://code.visualstudio.com/)
+- Python <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="20" height="20"> - You can download it [here](https://www.python.org/)
 
 ### Installation
 
@@ -44,15 +45,26 @@ This project is a sample based on the Expedia website, focused on webscraping to
    npm run start
    ```
 
-5. Open a new terminal and run the Flask app
+5. Install flask, flask-cors, and playwright
+   ```bash
+   pip install flask
+   pip install flask-cors
+   pip install playwright
+   ```
+
+6. Open a new terminal and run the Flask app
    ```bash
    cd expedia_webscraper/expedia_webscraper/src/app && python app.py
    ```
+   or
+   ```bash
+   cd expedia_webscraper/expedia_webscraper/src/app && python3 app.py
+   ```
 
-6. Open up the website at `localhost:3000`. Please be patient, as it may take 15-20 seconds to webscrape from Expedia.
+7. Open up the website at `localhost:3000`. Please be patient, as it may take 15-20 seconds to webscrape from Expedia.
 
 ## Challenges Faced
 
-During this project, my first attempt at webscraping, I encountered difficulties with Expedia's LazyLoad feature, which saves memory. I managed to bypass this by using Playwright's `click()` and `scroll_into_view_if_needed_()` functions. Additionally, using the `args=['--enable-automation']` flag helped register the "load more" button clicks effectively.
+During this project, my first attempt at webscraping, I encountered difficulties with Expedia's LazyLoad feature, which saves memory. I managed to bypass this by using Playwright's `click()` and `scroll_into_view_if_needed()` functions. Additionally, using the `args=['--enable-automation']` flag helped register the "load more" button clicks effectively.
 
 This was a fun project, and I look forward to further exploring the possibilities of webscraping in the future!
